@@ -136,8 +136,41 @@ input[type=text], select, textarea {
     margin-bottom: 16px;
     resize: vertical;
 }
+
+input[type=email], select, textarea {
+    width: 95%;
+    padding: 12px;
+    border: 1px solid #6e7a73;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=number], select, textarea {
+    width: 95%;
+    padding: 12px;
+    border: 1px solid #6e7a73;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=message], select, textarea {
+    width: 95%;
+    padding: 12px;
+    border: 1px solid #6e7a73;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
   
-input[type=submit] {
+button[type=submit] {
     background: #687169;
 	outline: solid 2px gray;
 	border: solid 2px white;
@@ -192,3 +225,7 @@ label {
     text-align: center;
 }
 
+.form {
+    display: inline-block;
+    
+}
