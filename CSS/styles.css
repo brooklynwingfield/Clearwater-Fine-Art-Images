@@ -224,6 +224,7 @@ label {
 
 .img {
     width: 85%;
+    outline: auto #4c4c4c 2px;
 }
 
 .footer {
@@ -451,3 +452,37 @@ a:is(:hover, :focus) figcaption {
         display: none;
     }
 }
+
+summary {
+    background-color: #687169;
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px;
+    color: white;
+    outline: solid #4c4c4c 2px;
+  }
+
+  details {
+    outline: solid #4c4c4c 2px;
+    border-radius: 5px;
+    margin: 10px;
+  }
+
+  details[open] summary {
+    background-color: #687169;
+  }
+
+  details > p {
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 30px;
+  }
+
+  summary:focus,
+  summary:hover {
+    background-color: #4c4c4c;
+  }
