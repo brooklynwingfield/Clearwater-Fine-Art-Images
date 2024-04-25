@@ -413,9 +413,10 @@ a:is(:hover, :focus) figcaption {
       
       nav {
         background: #687169;
+        outline: solid #4c4c4c 3px;
         width: 100vw;
-        padding: 30px 70px;
-        margin-top: 10px;
+        padding: 0 20px;
+        margin-top: 5px;
         position: absolute;
         left: -100vw;
         box-sizing: border-box;
