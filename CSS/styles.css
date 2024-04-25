@@ -255,7 +255,6 @@ label {
     }
 
 }
-
 .gallery-full {
 	margin: 0;
 	padding: 1rem;
@@ -269,7 +268,7 @@ label {
 }
 
 .gallery {
-	width: 100%;
+	width: 50%;
 	display: block;
 	aspect-ratio: 1 / 1;
 	object-fit: cover;
