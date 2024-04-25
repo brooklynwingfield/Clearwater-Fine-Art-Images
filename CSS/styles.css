@@ -238,10 +238,9 @@ label {
 }
 
 .column {
-    float: left;
-    width: 50%;
-    border: double #4b514a 3px;
-    padding: 5px;
+    float:left;
+    width: 48%;
+    padding: 1px;
     margin: 5px;
 }
   .row:after {
@@ -253,6 +252,10 @@ label {
 @media screen and (max-width: 600px) {
     .column {
       width: 94%;
+    }
+
+    .dropdown:focus {
+        opacity: 1;
     }
   }
 
