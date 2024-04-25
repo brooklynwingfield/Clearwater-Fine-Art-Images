@@ -451,9 +451,3 @@ a:is(:hover, :focus) figcaption {
         display: none;
     }
 }
-
-@media all and (min-width:767px) and (max-width: 1024px) {
-    #mobile {
-        display: none;
-    }
-}
