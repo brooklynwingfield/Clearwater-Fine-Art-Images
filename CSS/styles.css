@@ -281,7 +281,6 @@ label {
 	padding: 0;
 	display: grid;
 	gap: 0.5rem;
-	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 	max-width: 100%;
 	width: 70rem;
 }
@@ -316,7 +315,7 @@ figcaption {
 	justify-content: center;
 	place-items: center;
 	text-align: center;
-	padding: 1rem;
+	padding: 0.2rem;
 	color: white;
 	font-size: 1.2rem;
 	z-index: 1;
