@@ -254,11 +254,7 @@ label {
       width: 94%;
     }
 
-    .dropdown:focus {
-        opacity: 1;
-    }
-  }
-
+}
 
 .gallery-full {
 	margin: 0;
