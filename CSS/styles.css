@@ -283,7 +283,7 @@ label {
 	display: grid;
 	gap: 0.5rem;
 	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-	max-width: 100%;
+	max-width: 90%;
 	width: 70rem;
 }
 
