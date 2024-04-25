@@ -194,6 +194,13 @@ button[type=submit] {
     padding: 20px;
 }
 
+.container-mobile {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #6e7a73;
+    padding: 20px;
+}
+
 .bubble {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -437,6 +444,15 @@ a:is(:hover, :focus) figcaption {
 }
 
 @media all and (min-width:481px) and (max-width: 1024px) {
+    #mobile {
+        display: none;
+    }
+    .container-mobile {
+        display: none;
+    }
+}
+
+@media all and (min-width:767px) and (max-width: 1024px) {
     #mobile {
         display: none;
     }
