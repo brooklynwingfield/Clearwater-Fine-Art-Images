@@ -248,8 +248,7 @@ label {
 
 .column {
     float:left;
-    width: 48%;
-    margin: 5px;
+    width: 50%;
 }
   .row:after {
     content: "";
@@ -259,7 +258,7 @@ label {
 
 @media screen and (max-width: 600px) {
     .column {
-      width: 94%;
+      width: 100%;
     }
 
 }
@@ -458,8 +457,6 @@ summary {
     color: white;
     cursor: pointer;
     padding: 20px;
-    font-size: 18px;
-    font-weight: bold;
     margin: 5px;
     color: white;
     outline: solid #4c4c4c 2px;
