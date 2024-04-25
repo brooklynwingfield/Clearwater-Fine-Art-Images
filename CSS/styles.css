@@ -127,7 +127,7 @@ h1, h2, h3, h4, h5, p {
 }
 
 input[type=text], select, textarea {
-    width: 95%;
+    width: 90%;
     padding: 12px;
     border: 1px solid #6e7a73;
     border-radius: 4px;
@@ -138,7 +138,7 @@ input[type=text], select, textarea {
 }
 
 input[type=email], select, textarea {
-    width: 95%;
+    width: 90%;
     padding: 12px;
     border: 1px solid #6e7a73;
     border-radius: 4px;
@@ -149,7 +149,7 @@ input[type=email], select, textarea {
 }
 
 input[type=number], select, textarea {
-    width: 95%;
+    width: 90%;
     padding: 12px;
     border: 1px solid #6e7a73;
     border-radius: 4px;
@@ -160,7 +160,7 @@ input[type=number], select, textarea {
 }
 
 input[type=message], select, textarea {
-    width: 95%;
+    width: 90%;
     padding: 12px;
     border: 1px solid #6e7a73;
     border-radius: 4px;
@@ -181,6 +181,13 @@ button[type=submit] {
 }
 
 .container {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #6e7a73;
+    padding: 20px;
+}
+
+.containers {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     background-color: #6e7a73;
@@ -208,7 +215,7 @@ label {
 }
 
 .img {
-    width: 90%;
+    width: 85%;
 }
 
 .footer {
@@ -228,4 +235,212 @@ label {
 .form {
     display: inline-block;
     
+}
+
+.column {
+    float: left;
+    width: 50%;
+    border: double #4b514a 3px;
+    padding: 5px;
+    margin: 5px;
+}
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 94%;
+    }
+  }
+
+
+.gallery-full {
+	margin: 0;
+	padding: 1rem;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.gallery {
+	width: 100%;
+	display: block;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	transition: transform 1000ms;
+}
+
+.gallery-ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	gap: 0.5rem;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	max-width: 100%;
+	width: 70rem;
+}
+
+#gallery {
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+#gallery::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 200%;
+	height: 200%;
+	background: rgba(0, 0, 0, 0.5);
+	transform-origin: center;
+	opacity: 0;
+	transform: scale(2);
+	transition: opacity 300ms;
+}
+
+figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	place-items: center;
+	text-align: center;
+	padding: 1rem;
+	color: white;
+	font-size: 1.2rem;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 600ms, transform 600ms;
+}
+
+a:is(:hover, :focus) #gallery::after {
+	opacity: 1;
+}
+
+a:is(:hover, :focus) figcaption {
+	opacity: 1;
+	transition: opacity 600ms;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	figcaption {
+		transform: translate3d(0, 2rem, 0);
+	}
+	
+	#gallery::after {
+		border-radius: 50%;
+		opacity: 1;
+		transform: scale(0);
+		transition: transform 900ms;
+	}
+	
+	a:is(:hover, :focus) #gallery::after {
+		transform: scale(2.5);
+	}
+
+	a:is(:hover, :focus) figcaption {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+		transition: opacity 600ms 400ms, transform 600ms 400ms;
+	}
+
+	a:is(:hover, :focus) .gallery {
+		transform: scale(1.2);
+	}
+}
+
+
+@media all and (min-width:321px) and (max-width: 480px) {
+      .trigger {
+        display: none;
+      }
+      
+      .hamburger {
+        cursor: pointer;
+        margin-right: 10px;
+        float: left;
+      
+        span {
+          height: 3px;
+          width: 30px;
+          background: #f9f9f9;
+          display: block;
+          margin-bottom: 5px;
+          position: relative;
+          transition: transform 0.3s ease-in-out, top 0.3s ease-in-out,
+            opacity 0.3s ease-in-out;
+      
+          .trigger:checked ~ &:first-child {
+            transform: rotate(45deg);
+            top: 8px;
+          }
+      
+          .trigger:checked ~ &:last-child {
+            transform: rotate(-45deg);
+            top: -8px;
+          }
+      
+          .trigger:checked ~ &:nth-child(2) {
+            opacity: 0;
+          }
+        }
+      }
+      .container {
+        display: none;
+      }
+
+      .menu {
+        cursor: pointer;
+        color: white;
+      }
+      
+      nav {
+        background: #687169;
+        width: 100vw;
+        padding: 30px 70px;
+        margin-top: 10px;
+        position: absolute;
+        left: -100vw;
+        box-sizing: border-box;
+        transition: left 0.3s ease-in-out;
+      
+        .trigger:checked ~ & {
+          left: 0;
+        }
+
+    
+        .nav-item {
+            width: 100%;
+        }
+        
+        .nav-linkActive, .nav-link, .nav-item ul li a, .btn {
+            background: #4c4c4c;
+            outline: solid 2px #687169;
+        }
+        
+        .nav-linkActive:hover, .nav-link:hover, .nav-item ul li a:hover, .btn {
+            background: #4c4c4c;
+            outline: solid 3px gray;
+            border-radius: 4px;
+        }
+      }      
+}
+
+@media all and (min-width:481px) and (max-width: 1024px) {
+    #mobile {
+        display: none;
+    }
 }
