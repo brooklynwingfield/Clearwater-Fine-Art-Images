@@ -269,7 +269,7 @@ label {
 }
 
 .gallery {
-	width: 65%;
+	width: 100%;
 	display: block;
 	aspect-ratio: 1 / 1;
 	object-fit: cover;
@@ -283,7 +283,7 @@ label {
 	display: grid;
 	gap: 0.5rem;
 	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-	max-width: 90%;
+	max-width: 100%;
 	width: 70rem;
 }
 
