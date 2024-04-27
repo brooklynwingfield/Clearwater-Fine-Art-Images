@@ -665,4 +665,11 @@ header .shopping span{
     }
 
 }
+
+.ui-dialog-titlebar {
+    background:yellow;
+}
   
+.ui-dialog-title {
+    color: #4b514a;
+}
