@@ -1,9 +1,3 @@
-$( function() {
-    $( "#dialog" ).dialog();
-  } );
-
-
-
 let openShopping = document.querySelector('.shopping');
 let closeShopping = document.querySelector('.closeShopping');
 let list = document.querySelector('.list');
@@ -253,7 +247,7 @@ function addToCard(key){
 function reloadCard(){
     listCard.innerHTML = '';
     let count = 0;
-    let totalPrice = '$';
+    let totalPrice = 0;
     listCards.forEach((value, key)=>{
         totalPrice = totalPrice + value.price;
         count = count + value.quantity;
