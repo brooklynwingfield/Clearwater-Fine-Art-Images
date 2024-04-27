@@ -662,7 +662,22 @@ header .shopping span{
     .column3 {
       width: 100%;
     }
-
+    .card{
+        width: 300px;
+    }
+    .active .card{
+        left: calc(100% - 300px);
+    }
+    .card h1{
+        margin: 0 60px;
+    }
+    .listCard li{
+        display: inline-block;
+        margin: 0 25px 0 0;
+        grid-template-columns: 100px repeat(0, 1fr);
+        color: white;
+        row-gap: 10px;
+    }
 }
 
 .ui-dialog-titlebar {

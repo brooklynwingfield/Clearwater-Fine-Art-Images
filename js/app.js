@@ -227,11 +227,8 @@ function initApp(){
         newDiv.classList.add('item');
         newDiv.innerHTML = `
             <img src="Images/${value.image}">
-            <div class="title">${value.name}</div>
-            <div class="print.price">${value.price.toLocaleString()}</div>
-            <div class="frame.price">${value.price.toLocaleString()}</div>
+            <div class="price">${value.price.toLocaleString()}</div>
             <button onclick="addToCard(${key})">Add Print Only to Cart</button>`;
-            
         list.appendChild(newDiv);
     })
 }
