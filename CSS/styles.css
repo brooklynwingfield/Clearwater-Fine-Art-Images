@@ -288,6 +288,7 @@ label {
 	display: block;
 	object-fit: cover;
 	transition: transform 1000ms;
+    padding: 10px;
 }
 
 .gallery-ul {
