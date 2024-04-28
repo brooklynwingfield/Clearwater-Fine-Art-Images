@@ -31,6 +31,10 @@ body {
     text-align: left;
 }
 
+.nav-linkActive {
+    margin-top: 20px;
+}
+
 .nav-link, .dropdown-item, .btn a {
     text-decoration: none;    
 }
@@ -84,8 +88,10 @@ body {
     display: inline-block;
 }
 
-.dropdown-item {
+.dropdown-menu {
     margin-right: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .btn {
